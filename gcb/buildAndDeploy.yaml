@@ -14,5 +14,5 @@ steps:
 - name: 'gcr.io/cloud-builders/kubectl'
   args: ['set', 'image', 'deployment', 'mydeployment', 'hello-app=gcr.io/leadtechnique2022-kubernetes/container-image-gobleaddev:${SHORT_SHA}']
   env:
-  - 'CLOUDSDK_COMPUTE_REGION=us-central1'
+  - 'CLOUDSDK_COMPUTE_REGION=us-central1-c'
   - 'CLOUDSDK_CONTAINER_CLUSTER=mon-cluster'
